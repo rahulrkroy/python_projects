@@ -1,7 +1,7 @@
 import json
 from difflib import *
 
-filepath='/home/shikari/coding/python_Projects/dict_data.json'
+filepath='/home/shikari/python_projects/working dictionery/dict_data.json'
 data=json.load(open(filepath))
 
 
