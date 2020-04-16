@@ -138,6 +138,7 @@ playerY.set(0)
 
 playerXLabel=Label(rightFrame1,font=('arial',20,'bold'),text='Player X   :-',bd=10,bg='Blue',fg='Yellow',justify=CENTER)
 playerXLabel.grid(row=0,column=0)
+
 scoreplayerX=Entry(rightFrame1,text=playerX,font=('arial',20,'bold'),bd=2,bg='Blue',fg='Orange',width=16,justify=LEFT)
 scoreplayerX.grid(row=0,column=1)
 
