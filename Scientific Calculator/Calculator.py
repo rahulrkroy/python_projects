@@ -48,6 +48,13 @@ def clear():
     textfield.delete(0,END)
     textfield.insert(0,ex)
 
+
+def enterClicked(event):
+    e=Event()
+    e.widget=equalButton
+    clickbutton(e)
+
+
 #create window
 root=Tk()
 root.title("My Calculator")
@@ -103,6 +110,8 @@ delButton.grid(row=4,column=0 ,columnspan=2, padx=5, pady=5)
 
 clearButton=Button(buttonFrame,text='AC',font=font1,width=9, relief=GROOVE,activebackground='Maroon', activeforeground='White',command=lambda:textfield.delete(0,END))
 clearButton.grid(row=4,column=2 ,columnspan=2, padx=5, pady=5)
+
+textfield.bind('<Return>',enterClicked)
 
 #################################################################################################################################################
 # Scientific part
